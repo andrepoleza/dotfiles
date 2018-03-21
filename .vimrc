@@ -11,6 +11,8 @@ set number
 set nohlsearch
 set ttyfast
 
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -46,6 +48,7 @@ Plug 'fatih/vim-hclfmt'
 Plug 'itchyny/lightline.vim'
 Plug 'paulojean/sort-quire.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'fatih/vim-go'
 
 call plug#end()
 
