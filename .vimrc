@@ -40,15 +40,14 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-
-Plug 'tpope/vim-sensible'
-Plug 'junegunn/vim-easy-align'
-Plug 'fatih/vim-hclfmt'
-Plug 'itchyny/lightline.vim'
-Plug 'paulojean/sort-quire.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'fatih/vim-go'
+Plug 'fatih/vim-hclfmt'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'paulojean/sort-quire.vim'
+Plug 'tpope/vim-sensible'
 
 call plug#end()
 
