@@ -27,6 +27,8 @@ endif
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+nnoremap \ :Ag<SPACE>
+
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
