@@ -27,6 +27,11 @@ endif
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 let g:lightline = {
       \ 'colorscheme': 'Dracula',
       \ 'active': {
