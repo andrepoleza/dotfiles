@@ -10,6 +10,7 @@ set noswapfile
 set number
 set nohlsearch
 set ttyfast
+set ignorecase
 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
