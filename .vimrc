@@ -57,6 +57,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'paulojean/sort-quire.vim'
+Plug 'simeji/winresizer'
 Plug 'tpope/vim-sensible'
 
 call plug#end()
