@@ -41,6 +41,8 @@ inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
+let g:winresizer_start_key = '<C-T>'
+
 set colorcolumn=80
 
 let g:lightline = {
