@@ -1,12 +1,17 @@
 execute pathogen#infect()
 
 syntax on
+
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
+
+set nobackup
+set nowb
 set noswapfile
+
 set number
 set nohlsearch
 set ttyfast
