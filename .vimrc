@@ -35,6 +35,8 @@ set timeout ttimeoutlen=50
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
