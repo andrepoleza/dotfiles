@@ -14,6 +14,11 @@ set ignorecase
 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
 let c='a'
 while c <= 'z'
   exec "set <A-".c.">=\e".c
