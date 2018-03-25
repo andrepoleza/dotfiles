@@ -42,7 +42,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag --vimgrep --smart-case'
 endif
 
 nmap <S-Enter> O<Esc>
