@@ -14,6 +14,15 @@ set ignorecase
 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
+let c='a'
+while c <= 'z'
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+set timeout ttimeoutlen=50
+
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -33,13 +42,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-inoremap <C-j> <Esc>:m .+1<CR>==gi
-inoremap <C-k> <Esc>:m .-2<CR>==gi
-vnoremap <C-j> :m '>+1<CR>gv=gv
-vnoremap <C-k> :m '<-2<CR>gv=gv
 
 let g:winresizer_start_key = '<C-T>'
 
@@ -68,6 +70,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'paulojean/sort-quire.vim'
 Plug 'simeji/winresizer'
 Plug 'tpope/vim-sensible'
+Plug 'matze/vim-move'
 
 call plug#end()
 
