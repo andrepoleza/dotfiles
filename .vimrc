@@ -79,10 +79,11 @@ Plug 'fatih/vim-hclfmt'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'matze/vim-move'
 Plug 'paulojean/sort-quire.vim'
+Plug 'sgur/vim-editorconfig'
 Plug 'simeji/winresizer'
 Plug 'tpope/vim-sensible'
-Plug 'matze/vim-move'
 
 call plug#end()
 
