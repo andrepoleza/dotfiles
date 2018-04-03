@@ -95,6 +95,8 @@ Plug 'tpope/vim-sensible'
 
 call plug#end()
 
-color dracula
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
