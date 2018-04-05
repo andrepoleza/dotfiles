@@ -17,8 +17,6 @@ set nohlsearch
 set ttyfast
 set ignorecase
 
-set lazyredraw
-
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 set noerrorbells
