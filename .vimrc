@@ -92,6 +92,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'sgur/vim-editorconfig'
 Plug 'simeji/winresizer'
 Plug 'tpope/vim-sensible'
+Plug 'w0rp/ale'
 
 call plug#end()
 
