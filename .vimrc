@@ -70,7 +70,6 @@ let g:winresizer_start_key = '<C-T>'
 set colorcolumn=80
 
 let g:lightline = {
-      \ 'colorscheme': 'Dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
@@ -79,7 +78,7 @@ let g:lightline = {
 call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'owickstrom/vim-colors-paramount'
 Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
 Plug 'itchyny/lightline.vim'
@@ -96,8 +95,6 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-let g:dracula_italic = 0
-colorscheme dracula
-highlight Normal ctermbg=None
+colorscheme paramount
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
