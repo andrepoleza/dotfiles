@@ -24,6 +24,8 @@ set novisualbell
 set t_vb=
 set tm=500
 
+set scrolloff=5
+
 let c='a'
 while c <= 'z'
   exec "set <A-".c.">=\e".c
