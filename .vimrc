@@ -23,7 +23,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
-set scrolloff=10
+set scrolloff=30
 
 set relativenumber
 set norelativenumber
