@@ -12,7 +12,6 @@ set nobackup
 set nowb
 set noswapfile
 
-set number
 set nohlsearch
 set ttyfast
 set ignorecase
@@ -25,6 +24,10 @@ set t_vb=
 set tm=500
 
 set scrolloff=10
+
+set relativenumber
+set norelativenumber
+set relativenumber!
 
 let c='a'
 while c <= 'z'
