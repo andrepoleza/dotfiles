@@ -24,7 +24,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
-set scrolloff=5
+set scrolloff=10
 
 let c='a'
 while c <= 'z'
