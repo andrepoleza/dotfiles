@@ -8,6 +8,7 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 
+set number
 set nobackup
 set nowb
 set noswapfile
@@ -24,10 +25,6 @@ set t_vb=
 set tm=500
 
 set scrolloff=30
-
-set relativenumber
-set norelativenumber
-set relativenumber!
 
 let c='a'
 while c <= 'z'
