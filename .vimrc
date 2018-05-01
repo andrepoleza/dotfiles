@@ -72,6 +72,7 @@ let g:winresizer_start_key = '<C-T>'
 set colorcolumn=80
 
 let g:lightline = {
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
@@ -80,7 +81,6 @@ let g:lightline = {
 call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf'
-Plug 'owickstrom/vim-colors-paramount'
 Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
 Plug 'itchyny/lightline.vim'
@@ -89,6 +89,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'matze/vim-move'
 Plug 'paulojean/sort-quire.vim'
+Plug 'rakr/vim-one'
 Plug 'rust-lang/rust.vim'
 Plug 'sgur/vim-editorconfig'
 Plug 'simeji/winresizer'
@@ -97,6 +98,8 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-colorscheme paramount
+set background=dark
+let g:one_allow_italics = 1
+colorscheme one
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
