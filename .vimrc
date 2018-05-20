@@ -12,6 +12,7 @@ set number
 set nobackup
 set nowb
 set noswapfile
+set noshowmode
 
 set nohlsearch
 set ttyfast
