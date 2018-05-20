@@ -2,32 +2,33 @@ execute pathogen#infect()
 
 syntax on
 
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set autoindent
-
-set number
-set nobackup
-set nowb
-set noswapfile
-set noshowmode
-
-set nohlsearch
-set ttyfast
-set ignorecase
-
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
-
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
-
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+set autoindent
+set colorcolumn=80
+set expandtab
+set ignorecase
+set nobackup
+set noerrorbells
+set nohlsearch
+set noshowmode
+set noswapfile
+set novisualbell
+set nowb
+set number
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set shiftwidth=2
+set softtabstop=2
+set t_vb=
+set tabstop=2
+set timeout ttimeoutlen=50
+set tm=500
+set ttyfast
+
+autocmd BufEnter * EnableStripWhitespaceOnSave
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 let c='a'
 while c <= 'z'
@@ -36,50 +37,37 @@ while c <= 'z'
   let c = nr2char(1+char2nr(c))
 endw
 
-set timeout ttimeoutlen=50
-
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
-
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-
 if executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
 endif
 
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap < <gv
 vnoremap > >gv
-
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
-
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
-
+noremap <silent> <C-S> :update<CR>
+vnoremap <silent> <C-S> <C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
 nnoremap \ :Ag<SPACE>
-
 nnoremap <tab>   <c-w>w
 nnoremap <S-tab> <c-w>W
-
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:winresizer_start_key = '<C-T>'
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
 
-set colorcolumn=80
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:winresizer_start_key = '<C-T>'
 
 let g:lightline = {
       \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
-      \ }
+    \ }
 
 call plug#begin('~/.vim/plugged')
 
@@ -102,5 +90,3 @@ Plug 'w0rp/ale'
 call plug#end()
 
 colorscheme one
-
-autocmd BufEnter * EnableStripWhitespaceOnSave
