@@ -23,6 +23,7 @@ set shiftwidth=2
 set softtabstop=2
 set t_vb=
 set tabstop=2
+set termguicolors
 set timeout ttimeoutlen=50
 set tm=500
 set ttyfast
