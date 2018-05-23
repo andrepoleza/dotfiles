@@ -39,7 +39,7 @@ endw
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep --smart-case'
+  let g:ackprg = 'ag %s -l --vimgrep --smart-case --nocolor'
 endif
 
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
