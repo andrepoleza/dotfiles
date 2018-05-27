@@ -63,7 +63,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --cache
 let g:winresizer_start_key = '<C-T>'
 
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'landscape',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
@@ -74,13 +74,13 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
+Plug 'itchyny/landscape.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'matze/vim-move'
 Plug 'paulojean/sort-quire.vim'
-Plug 'rakr/vim-one'
 Plug 'rust-lang/rust.vim'
 Plug 'sgur/vim-editorconfig'
 Plug 'simeji/winresizer'
@@ -89,4 +89,4 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-colorscheme one
+colorscheme landscape
