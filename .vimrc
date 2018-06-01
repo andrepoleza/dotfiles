@@ -63,7 +63,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --cache
 let g:winresizer_start_key = '<C-T>'
 
 let g:lightline = {
-      \ 'colorscheme': 'landscape',
+      \ 'colorscheme': 'jellybeans',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
@@ -74,12 +74,12 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
-Plug 'itchyny/landscape.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'matze/vim-move'
+Plug 'nanotech/jellybeans.vim'
 Plug 'paulojean/sort-quire.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'sgur/vim-editorconfig'
@@ -89,4 +89,4 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-colorscheme landscape
+colorscheme jellybeans
