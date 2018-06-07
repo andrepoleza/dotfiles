@@ -23,8 +23,11 @@ set shiftwidth=2
 set softtabstop=2
 set t_vb=
 set tabstop=2
-set timeout ttimeoutlen=50
+set timeout
+set timeoutlen=3000
 set tm=500
+set ttimeout
+set ttimeoutlen=50
 set ttyfast
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
