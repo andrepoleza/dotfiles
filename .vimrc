@@ -18,6 +18,7 @@ set noswapfile
 set novisualbell
 set nowb
 set number
+set re=1
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set shiftwidth=2
 set softtabstop=2
