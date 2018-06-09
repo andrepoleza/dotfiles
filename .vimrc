@@ -22,6 +22,7 @@ set number
 set re=1
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set shiftwidth=2
+set showmatch
 set softtabstop=2
 set t_vb=
 set tabstop=2
