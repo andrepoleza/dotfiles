@@ -11,7 +11,6 @@ set autoread
 set colorcolumn=80
 set expandtab
 set ignorecase
-set mouse=a
 set nobackup
 set noerrorbells
 set nohlsearch
