@@ -1,5 +1,24 @@
 execute pathogen#infect()
 
+call plug#begin('~/.vim/plugged')
+
+Plug '/usr/local/opt/fzf'
+Plug 'Yggdroot/indentLine'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'matze/vim-move'
+Plug 'nanotech/jellybeans.vim'
+Plug 'paulojean/sort-quire.vim'
+Plug 'sgur/vim-editorconfig'
+Plug 'sheerun/vim-polyglot'
+Plug 'simeji/winresizer'
+Plug 'tpope/vim-sensible'
+Plug 'w0rp/ale'
+
+call plug#end()
+
 syntax on
 
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
@@ -74,24 +93,5 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
     \ }
-
-call plug#begin('~/.vim/plugged')
-
-Plug '/usr/local/opt/fzf'
-Plug 'Yggdroot/indentLine'
-Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'matze/vim-move'
-Plug 'nanotech/jellybeans.vim'
-Plug 'paulojean/sort-quire.vim'
-Plug 'sgur/vim-editorconfig'
-Plug 'sheerun/vim-polyglot'
-Plug 'simeji/winresizer'
-Plug 'tpope/vim-sensible'
-Plug 'w0rp/ale'
-
-call plug#end()
 
 colorscheme jellybeans
