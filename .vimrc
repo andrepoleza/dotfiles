@@ -78,8 +78,6 @@ let g:lightline = {
 call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf'
-Plug 'fatih/vim-go'
-Plug 'fatih/vim-hclfmt'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
@@ -87,8 +85,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'matze/vim-move'
 Plug 'nanotech/jellybeans.vim'
 Plug 'paulojean/sort-quire.vim'
-Plug 'rust-lang/rust.vim'
 Plug 'sgur/vim-editorconfig'
+Plug 'sheerun/vim-polyglot'
 Plug 'simeji/winresizer'
 Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
