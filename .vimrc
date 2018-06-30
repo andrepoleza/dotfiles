@@ -9,7 +9,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'matze/vim-move'
-Plug 'nanotech/jellybeans.vim'
 Plug 'paulojean/sort-quire.vim'
 Plug 'sgur/vim-editorconfig'
 Plug 'sheerun/vim-polyglot'
@@ -88,10 +87,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --cache
 let g:winresizer_start_key = '<C-T>'
 
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
     \ }
-
-colorscheme jellybeans
