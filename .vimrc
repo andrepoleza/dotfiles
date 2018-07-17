@@ -66,7 +66,6 @@ if executable('ag')
   let g:ackprg = 'ag %s -l --vimgrep --smart-case --nocolor'
 endif
 
-vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap < <gv
 vnoremap > >gv
 noremap <silent> <C-S> :update<CR>
