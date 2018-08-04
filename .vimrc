@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'matze/vim-move'
 Plug 'paulojean/sort-quire.vim'
 Plug 'sgur/vim-editorconfig'
@@ -90,3 +91,6 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
     \ }
+
+set background=dark
+colorscheme hybrid_reverse
