@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf'
 Plug 'Yggdroot/indentLine'
+Plug 'blueyed/vim-diminactive'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
