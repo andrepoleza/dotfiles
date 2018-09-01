@@ -84,6 +84,9 @@ nnoremap <C-H> <C-W><C-H>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+imap jk <Esc>
+imap kj <Esc>
+
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --cached --exclude-standard']
 let g:winresizer_start_key = '<C-T>'
 
