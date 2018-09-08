@@ -15,6 +15,7 @@ Plug 'paulojean/sort-quire.vim'
 Plug 'sgur/vim-editorconfig'
 Plug 'sheerun/vim-polyglot'
 Plug 'simeji/winresizer'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
 
