@@ -34,6 +34,7 @@ nmap ga <Plug>(EasyAlign)
 
 set autoindent
 set autoread
+set clipboard=unnamed
 set colorcolumn=80
 set expandtab
 set ignorecase
