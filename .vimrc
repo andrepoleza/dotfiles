@@ -9,8 +9,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'matze/vim-move'
+Plug 'rakr/vim-one'
 Plug 'paulojean/sort-quire.vim'
 Plug 'sgur/vim-editorconfig'
 Plug 'sheerun/vim-polyglot'
@@ -18,14 +18,11 @@ Plug 'simeji/winresizer'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
+Plug 'zhou13/vim-easyescape'
 
 call plug#end()
 
 syntax on
-
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -91,17 +88,20 @@ nnoremap <C-H> <C-W><C-H>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
-imap jk <Esc>
-imap kj <Esc>
+let g:easyescape_chars = { "j": 1, "k": 1 }
+let g:easyescape_timeout = 100
+cnoremap jk <ESC>
+cnoremap kj <ESC>
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --cached --exclude-standard']
 let g:winresizer_start_key = '<C-T>'
 
 let g:lightline = {
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
     \ }
 
-set background=dark
-colorscheme hybrid_reverse
+set background=light
+colorscheme one
