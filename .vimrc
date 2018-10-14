@@ -50,6 +50,7 @@ set showmatch
 set softtabstop=2
 set t_vb=
 set tabstop=2
+set termguicolors
 set timeout
 set timeoutlen=3000
 set tm=500
@@ -58,7 +59,6 @@ set ttimeoutlen=50
 set ttyfast
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 let c='a'
 while c <= 'z'
@@ -103,5 +103,5 @@ let g:lightline = {
       \ },
     \ }
 
-set background=light
+set background=dark
 colorscheme one
