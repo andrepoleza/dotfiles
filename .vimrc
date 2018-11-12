@@ -5,13 +5,13 @@ call plug#begin('~/.vim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'Yggdroot/indentLine'
 Plug 'blueyed/vim-diminactive'
+Plug 'cocopon/iceberg.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'matze/vim-move'
 Plug 'paulojean/sort-quire.vim'
-Plug 'rakr/vim-one'
 Plug 'sgur/vim-editorconfig'
 Plug 'sheerun/vim-polyglot'
 Plug 'simeji/winresizer'
@@ -98,11 +98,10 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --cache
 let g:winresizer_start_key = '<C-T>'
 
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'iceberg',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
     \ }
 
-set background=dark
-colorscheme one
+colorscheme iceberg
