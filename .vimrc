@@ -104,3 +104,5 @@ let g:lightline = {
     \ }
 
 colorscheme iceberg
+
+Z
