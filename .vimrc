@@ -18,7 +18,6 @@ Plug 'simeji/winresizer'
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'w0rp/ale'
 Plug 'zhou13/vim-easyescape'
 
 call plug#end()
